@@ -1,0 +1,11 @@
+/app/build
+local.properties
+.idea
+*.iml
+*.class
+*.jar
+*.war
+*.ear
+.gradle
+!gradle-wrapper.jar
+

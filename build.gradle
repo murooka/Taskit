@@ -1,0 +1,25 @@
+ext {
+    kotlinVersion = '1.0.2'
+    gaeSdkVersion = '1.9.38'
+    jerseyVersion = '2.23.1'
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "com.google.appengine:gradle-appengine-plugin:1.9.38"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.2"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
