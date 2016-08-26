@@ -12,7 +12,9 @@
                 com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider
                 org.glassfish.jersey.server.filter.HttpMethodOverrideFilter
                 me.murooka.taskit.BasicContextListener
+                me.murooka.taskit.filter.AuthenticationFilter
                 me.murooka.taskit.handler.RouteHandler
+                me.murooka.taskit.handler.ExceptionMapper
             </param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>

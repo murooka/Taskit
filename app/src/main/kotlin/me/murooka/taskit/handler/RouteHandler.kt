@@ -4,6 +4,6 @@ import javax.ws.rs.Path
 
 @Path("/")
 class RouteHandler {
-    @Path("/users")
-    fun routeToUserHandler() = UserHandler()
+    @Path("/auth")
+    fun routeToAuthHandler() = AuthHandler()
 }

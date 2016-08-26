@@ -33,6 +33,8 @@ dependencies {
     compile "org.glassfish.jersey.ext:jersey-mvc-jsp:${rootProject.ext.jerseyVersion}"
     compile "org.glassfish.jersey.media:jersey-media-json-jackson:${rootProject.ext.jerseyVersion}"
     compile 'com.googlecode.objectify:objectify:5.1.13'
+    compile 'com.auth0:java-jwt:2.2.0'
+    compile group: 'joda-time', name: 'joda-time', version: '2.1'
 
     testCompile "com.google.appengine:appengine-api-stubs:${rootProject.ext.gaeSdkVersion}"
     testCompile "com.google.appengine:appengine-testing:${rootProject.ext.gaeSdkVersion}"
