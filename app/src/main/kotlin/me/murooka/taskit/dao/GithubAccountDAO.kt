@@ -19,8 +19,7 @@ class GithubAccountDAO() {
         this.user = user
     }
 
-    @OnSave
-    @Suppress("UNUSED_PARAMETER")
+    @OnSave @Suppress("UNUSED")
     fun prepareToSave() {
         val now = DateTime.now()
         if (this.createdAt == null) {

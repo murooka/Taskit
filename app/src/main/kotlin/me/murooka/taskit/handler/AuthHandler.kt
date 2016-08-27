@@ -4,11 +4,8 @@ import me.murooka.taskit.dao.EmailAuthDAO
 import me.murooka.taskit.dao.UserDAO
 import me.murooka.taskit.exception.InvalidParamException
 import me.murooka.taskit.handler.view.SessionView
-import me.murooka.taskit.handler.view.UserView
-import me.murooka.taskit.model.User
 import me.murooka.taskit.service.GithubAccountService
 import me.murooka.taskit.service.SessionService
-import java.security.Security
 import javax.ws.rs.Consumes
 import javax.ws.rs.POST
 import javax.ws.rs.Path

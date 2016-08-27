@@ -16,7 +16,7 @@ class UserDAO() {
         this.id = id
     }
 
-    @OnSave
+    @OnSave @Suppress("UNUSED")
     fun prepareToSave() {
         val now = DateTime.now()
         if (this.createdAt == null) {

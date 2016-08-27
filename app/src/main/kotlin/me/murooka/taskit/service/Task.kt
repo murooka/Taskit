@@ -7,13 +7,12 @@ import javax.ws.rs.Consumes
 import javax.ws.rs.Produces
 import javax.ws.rs.PathParam
 import javax.ws.rs.core.MediaType
-import java.util.Map
 
 import javax.xml.bind.annotation.XmlRootElement
 
 @XmlRootElement
 class PostCreateRequest {
-    public var id: String? = null
+    var id: String? = null
 }
 
 @Path("tasks")
@@ -36,7 +35,7 @@ class Task() {
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     fun getSelf(@PathParam("id") id: String): String {
-        return "{ \"id\": \"${id}\" }"
+        return "{ \"id\": \"$id\" }"
     }
 
 }
